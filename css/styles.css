@@ -1,0 +1,14 @@
+.img_radius {
+  /* border-radius: 20%; */
+  border: 2px solid black;
+}
+
+i {
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
