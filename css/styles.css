@@ -27,8 +27,14 @@ i {
   }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 475px) {
   #main_logo {
-    width: 300px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  #main_logo {
+    width: 200px;
   }
 }
