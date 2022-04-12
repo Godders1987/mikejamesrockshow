@@ -1,3 +1,7 @@
+#main_logo {
+  width: 380px;
+}
+
 .img_radius {
   /* border-radius: 20%; */
   border: 2px solid black;
@@ -7,14 +11,24 @@ i {
   color: white;
 }
 
-/* @media (min-width: 574px) {
-  .card {
-    margin-bottom: 30px;
-  }
+/* #card_container {
+  min-height: -webkit-fill-available;
+}
+
+#card_container a:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
 } */
 
 @media (max-width: 990px) {
   .card {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 477px) {
+  #main_logo {
+    width: 300px;
   }
 }
