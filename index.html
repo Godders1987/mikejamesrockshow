@@ -6,189 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Mike James Rock Show</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
 
     <header class="header">
-      <a href="#" class="logo"
-        ><img src="img/MJRS_Logo_Long.png" alt="Mike James Rock Show Logo"
-      /></a>
-      <div class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Listen Now</a></li>
-          <li><a href="#" class="main-nav-link">Contact</a></li>
-          <li><a href="#" class="main-nav-link">Social Media</a></li>
-        </ul>
+      <div class="nav">
+        <a href="#" class="logo"
+          ><img src="img/MJRS_Logo_Long.png" alt="Mike James Rock Show Logo"
+        /></a>
+        <div class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="listen_now.html" class="main-nav-link">Listen Now</a>
+            </li>
+            <li><a href="contact.html" class="main-nav-link">Contact</a></li>
+            <li><a href="#" class="main-nav-link">Social Media</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container cta">
+        <div class="cta-text">
+          <h1>
+            Want to hear backstage interviews with some of your favourite bands?
+          </h1>
+          <a class="btn" href="listen_now.html">Listen Now &rarr;</a>
+        </div>
       </div>
     </header>
-
-    <!-- Cards -->
-    <section class="bg-light flex-grow-1" id="card_container">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-around py-5"
-      >
-        <section class="p-1">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a
-                    href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/mixcloud.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
-                    class="btn btn-dark mt-2"
-                    target="_blank"
-                    >Previous Interviews</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a href="https://hardrockhellradio.com/" target="_blank">
-                    <img
-                      src="img/HRHR_logo.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://hardrockhellradio.com/"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >Hard Rock Radio</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white" id="RR_radio">
-                  <a
-                    href="https://www.facebook.com/rockrageradiolive/"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/RR_logo.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://www.facebook.com/rockrageradiolive/"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >Rock Rage Radio</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a
-                    href="https://www.youtube.com/c/MikeJamesRockShow"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/youtube.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://www.youtube.com/c/MikeJamesRockShow"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >YouTube Channel</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
-
-    <section id="contact">
-      <div class="container my-3 mb-6">
-        <h3 class="text-center h2">Contact Us!</h3>
-        <form class="row g-3" action="POST" data-netlify="true">
-          <div class="col-md-6">
-            <label for="firstName" class="form-label">First Name</label>
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="col-md 6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="col-md-8">
-            <label for="emailInfo" class="form-label">E-Mail</label>
-            <input
-              type="email"
-              name="email"
-              id="emailInfo"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="col-md-4">
-            <label for="phoneNumber" class="form-label"
-              >Phone Number (optional)</label
-            >
-            <input
-              type="text"
-              name="phoneNumber"
-              id="phoneNumber"
-              class="form-control"
-              placeholder="+44 77 7777 7777"
-            />
-          </div>
-          <div class="col-md-12">
-            <label for="comments" class="form-label"
-              >Comments, questions?</label
-            >
-            <textarea
-              name="message"
-              id="comments"
-              cols="30"
-              rows="3"
-              class="form-control"
-              required
-            ></textarea>
-          </div>
-          <div data-netlify-recaptcha="true"></div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-dark" value="Send">
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
 
     <!-- Footer -->
 

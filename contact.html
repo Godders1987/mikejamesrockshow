@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mike James Rock Show</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section id="contact">
+      <div class="container my-3 mb-6">
+        <h3 class="text-center h2">Contact Us!</h3>
+        <form class="row g-3" action="POST" data-netlify="true">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md 6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-8">
+            <label for="emailInfo" class="form-label">E-Mail</label>
+            <input
+              type="email"
+              name="email"
+              id="emailInfo"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label"
+              >Phone Number (optional)</label
+            >
+            <input
+              type="text"
+              name="phoneNumber"
+              id="phoneNumber"
+              class="form-control"
+              placeholder="+44 77 7777 7777"
+            />
+          </div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label"
+              >Comments, questions?</label
+            >
+            <textarea
+              name="message"
+              id="comments"
+              cols="30"
+              rows="3"
+              class="form-control"
+              required
+            ></textarea>
+          </div>
+          <div data-netlify-recaptcha="true"></div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-dark" value="Send">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
