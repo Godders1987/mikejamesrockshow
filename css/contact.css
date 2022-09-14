@@ -1,0 +1,69 @@
+body {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(../img/sam-moghadam-khamseh-0gaYQpOMNpc-unsplash.jpg);
+  background-size: cover;
+}
+
+.container-form {
+  width: 800px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 48px 24px 48px;
+  background-color: rgba(71, 70, 70, 0.534);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label,
+input,
+textarea {
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 24px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #17252a;
+}
+
+textarea {
+  margin-bottom: 20px;
+  border: 1px solid #17252a;
+  padding: 10px;
+}
+
+input,
+input::placeholder {
+  font-size: 18px;
+}
+
+textarea,
+textarea::placeholder {
+  font-size: 18px;
+  font-family: inherit;
+}
