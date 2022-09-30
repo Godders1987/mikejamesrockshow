@@ -18,53 +18,167 @@
   <body>
     <!-- Navbar -->
 
-    <header class="header">
+    <header class="header" id="home">
       <div class="nav">
-        <a href="#" class="logo"
+        <a href="#home" class="logo"
           ><img src="img/MJRS_Logo_Long.png" alt="Mike James Rock Show Logo"
         /></a>
         <div class="main-nav">
           <ul class="main-nav-list">
             <li>
-              <a href="listen_now.html" class="main-nav-link">Listen Now</a>
+              <a href="#home" class="main-nav-link">Home</a>
             </li>
-            <li><a href="contact.html" class="main-nav-link">Contact</a></li>
-            <li><a href="#" class="main-nav-link">Social Media</a></li>
+            <li>
+              <a href="#listen_now" class="main-nav-link">Listen Now</a>
+            </li>
+            <li><a href="#contact" class="main-nav-link">Contact</a></li>
+            <li>
+              <a href="#social_media" class="main-nav-link">Social Media</a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="container cta">
-        <div class="cta-text">
-          <h1>
-            Want to hear backstage interviews with some of your favourite bands?
-          </h1>
-          <a class="btn" href="listen_now.html">Listen Now &rarr;</a>
+      <section class="hero">
+        <div class="container cta">
+          <div class="cta-text">
+            <h1>
+              Want to hear backstage interviews with some of your favourite
+              bands?
+            </h1>
+            <a class="btn" href="#listen_now">Listen Now &rarr;</a>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
 
-    <!-- Footer -->
+    <!-- LISTEN NOW -->
 
-    <footer class="bg-dark sticky-bottom mt-auto">
-      <div class="container p-5 text-center">
-        <a href="https://www.facebook.com/mikejamesrockshow" target="_blank"
-          ><i class="bi bi-facebook h1 m-4"></i
-        ></a>
-        <a href="https://www.instagram.com/mikejamesrockshow/" target="_blank"
-          ><i class="bi bi-instagram h1 m-4"></i
-        ></a>
-        <a
-          href="https://twitter.com/tweetMJRS?s=20&t=trAFuwJuffR-4hPzIWWXDw"
-          target="_blank"
-          ><i class="bi bi-twitter h1 m-4"></i
-        ></a>
+    <section class="cards" id="listen_now">
+      <div class="container-listen section-cards-grid">
+        <div class="card">
+          <img src="img/mixcloud.jpeg" alt="" />
+          <div class="card-content">
+            <p>
+              Home of the Mike James Rock Show listen again service. Updated
+              every Monday
+            </p>
+            <a
+              href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
+              class="btn"
+              target="_blank"
+              >Listen Now</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/HRHR_logo.png" alt="" />
+          <div class="card-content">
+            <p>
+              Thursday's 5pm GMT Mike James Rock show take over Hard Rock Hell
+              Radio
+            </p>
+            <a href="https://hardrockhellradio.com/" class="btn" target="_blank"
+              >See Schedule</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/RR_logo.png" alt="" />
+          <div class="card-content">
+            <p>
+              Sundays 5pm GMT Mike James Rock show take over Rock Rage Radio
+            </p>
+            <a href="https://rockrageradio.com/" class="btn" target="_blank"
+              >See Schedule</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/youtube.png" alt="" />
+          <div class="card-content">
+            <p>
+              Watch previous interviews with some of the biggest stars on the
+              Rock/Metal & Alternative scenes.
+            </p>
+            <a
+              href="https://www.youtube.com/c/MikeJamesRockShow"
+              class="btn"
+              target="_blank"
+              >Watch Now</a
+            >
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+
+    <!-- CONTACT FORM -->
+
+    <section class="contact" id="contact">
+      <div class="contact-form" id="contact-form">
+        <div class="container-form">
+          <form name="contact" action="POST" data-netlify="true">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter Name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Enter Email"
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Please type message here..."
+            ></textarea>
+            <button type="submit" class="submit btn">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="footer" id="social_media">
+        <div class="footer_icons">
+          <a href="https://www.facebook.com/mikejamesrockshow" target="_blank"
+            ><ion-icon class="social_icon" name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://www.instagram.com/mikejamesrockshow/" target="_blank"
+            ><ion-icon class="social_icon" name="logo-instagram"></ion-icon
+          ></a>
+          <a
+            href="https://twitter.com/tweetMJRS?s=20&t=trAFuwJuffR-4hPzIWWXDw"
+            target="_blank"
+            ><ion-icon class="social_icon" name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
