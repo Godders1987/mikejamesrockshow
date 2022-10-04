@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 48px;
+  padding: 0 4.8rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 32px;
+  max-width: 120rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
@@ -24,11 +28,11 @@
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  padding: 16px 28px;
+  padding: 1.6rem 2.8rem;
   border-radius: 9px;
   background-color: rgb(206, 126, 60);
   /* Only necessary for .btn */
@@ -51,7 +55,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 3.2rem;
 }
 
 .main-nav-link:link,
@@ -61,8 +65,8 @@
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 24px;
-  padding: 0 5px;
+  font-size: 2.4rem;
+  padding: 0 0.5rem;
 }
 
 .main-nav-link:after {
