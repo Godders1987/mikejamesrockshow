@@ -1,23 +1,117 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ************************/
+/* BELOW 1344px (Smaller desktops */
+/* ************************/
+
+@media (max-width: 84em) {
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .cta h1 {
+    font-size: 6.2rem;
+  }
+
+  .section-cards-grid img {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .card-content p {
+    font-size: 2rem;
+  }
+}
+
+/* ************************/
+/* BELOW 1200px (Landscape Tablets) */
+/* ************************/
+
 @media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
   .logo {
     height: 8.4rem;
   }
 
-  .main-nav-list {
-    gap: 2.8rem;
+  .nav {
+    padding: 0 3.2rem;
   }
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 2rem;
+  .main-nav-list {
+    gap: 1.6rem;
   }
 
   .cta-text {
     padding: 0 4.8rem;
   }
 
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+
   .cta h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     padding: 0 4.8rem;
+  }
+
+  .container-listen {
+    margin-top: 2rem;
+    padding: 4rem 4.8rem;
+  }
+
+  .section-cards-grid img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .card-content {
+    gap: 2.4rem;
+  }
+
+  .card-content p {
+    font-size: 2rem;
+  }
+}
+
+/* ************************/
+/* BELOW 944px (Tablets) */
+/* ************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-cards-grid {
+    gap: 3.2rem;
+  }
+
+  .card {
+    padding: 1.6rem;
+  }
+
+  .card-content {
+    gap: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .container-listen {
+    padding: 0 3.2rem;
+  }
+
+  .btn-sm,
+  .btn-sm:link,
+  .btn-sm:visited {
+    padding: 1.2rem 1.6rem;
   }
 }
