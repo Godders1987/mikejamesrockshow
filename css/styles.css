@@ -16,7 +16,7 @@ body {
   gap: 3.6rem;
 }
 
-/* MOBILE */
+/* MOBILE
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -33,7 +33,7 @@ body {
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
-}
+} */
 
 .hero {
   /* height: 100%; */
