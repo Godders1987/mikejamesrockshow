@@ -29,6 +29,10 @@
   .card-content p {
     font-size: 2rem;
   }
+
+  .contact {
+    padding-top: 8rem;
+  }
 }
 
 /* ************************/
