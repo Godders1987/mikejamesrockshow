@@ -19,6 +19,7 @@
 
   .cards {
     padding-top: 8rem;
+    padding-bottom: 6.4rem;
   }
 
   .section-cards-grid {
@@ -31,7 +32,7 @@
   }
 
   .contact {
-    padding-top: 8rem;
+    padding-top: 6.4rem;
   }
 }
 
