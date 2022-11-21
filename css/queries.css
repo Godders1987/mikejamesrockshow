@@ -20,6 +20,7 @@
   .cards {
     padding-top: 8rem;
     padding-bottom: 6.4rem;
+    margin-bottom: 6.4rem;
   }
 
   .section-cards-grid {
@@ -101,7 +102,7 @@
   }
 
   .section-cards-grid img {
-    height: auto;
+    /* height: auto; */
   }
 
   .card-content {
@@ -121,5 +122,26 @@
   .btn:link,
   .btn:visited {
     font-size: 2.4rem;
+  }
+}
+
+/* ************************/
+/* BELOW 740px (Phones) */
+/* ************************/
+
+@media (max-width: 46em) {
+  .cta h1 {
+    font-size: 5.2rem;
+  }
+
+  .section-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    margin: 0 4.8rem;
+  }
+
+  .section-cards-grid img {
+    /* width: 50%; */
+    height: auto;
   }
 }
