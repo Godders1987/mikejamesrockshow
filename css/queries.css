@@ -231,13 +231,14 @@
 
   .hero {
     display: flex;
-    /* flex-grow: 1; */
+    flex-grow: 0;
     justify-content: center;
     align-items: center;
   }
 
   .cta-text {
     padding: 0;
+    margin-top: 8rem;
   }
 
   .container-listen {
