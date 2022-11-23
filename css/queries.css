@@ -234,11 +234,17 @@
 
   .container-listen {
     margin-top: 2rem;
-    padding: 4rem 2.4rem;
+    padding: 4rem 1.6rem;
+  }
+
+  .cards {
+    padding-top: 4.8rem;
+    padding-bottom: 6.4rem;
+    margin-bottom: 6.4rem;
   }
 
   .section-cards-grid {
     gap: 4.8rem;
-    margin: 0 2.4rem;
+    /* margin: 0 2.4rem; */
   }
 }
