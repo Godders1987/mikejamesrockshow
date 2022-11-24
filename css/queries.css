@@ -239,7 +239,9 @@
     flex-grow: 0;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    /* height: 100%; */
   }
 
   .cta-text {
