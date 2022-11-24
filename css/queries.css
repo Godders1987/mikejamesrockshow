@@ -212,10 +212,10 @@
 /* BELOW 500px (Phones) */
 /* ************************/
 @media (max-width: 31em) {
-  .header {
+  /* .header {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-  }
+  } */
 
   .cta h1 {
     font-size: 3.6rem;
@@ -236,9 +236,10 @@
 
   .hero {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0;
     justify-content: center;
     align-items: center;
+    height: 500px;
     /* min-height: 100vh; */
     /* min-height: -webkit-fill-available; */
     /* height: 100%; */
