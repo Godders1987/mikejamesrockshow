@@ -212,10 +212,9 @@
 /* BELOW 500px (Phones) */
 /* ************************/
 @media (max-width: 31em) {
-  /* .header {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  } */
+  .header {
+    height: 100%;
+  }
 
   .cta h1 {
     font-size: 3.6rem;
