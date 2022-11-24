@@ -188,6 +188,11 @@
 /* ************************/
 
 @media (max-width: 46em) {
+  .header {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
   .cta h1 {
     font-size: 5.2rem;
   }
