@@ -315,13 +315,16 @@ textarea {
 input,
 input::placeholder {
   font-size: 1.8rem;
-  color: rgba(85, 85, 85, 0.377);
 }
 
 textarea,
 textarea::placeholder {
   font-size: 1.8rem;
   font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: rgba(85, 85, 85, 0.377);
 }
 
