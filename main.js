@@ -1,3 +1,4 @@
+// Smooth scrolling effect
 $(".nav a, .btn").on("click", function (e) {
   if (this.hash !== "") {
     e.preventDefault();
@@ -9,4 +10,13 @@ $(".nav a, .btn").on("click", function (e) {
     }),
       800;
   }
+});
+
+// Make mobile navigatiion work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
