@@ -82,11 +82,12 @@ body {
   /* position: fixed; */
   width: 100%;
   z-index: 1;
-  height: 9.6rem;
+  height: 7rem;
 }
 
 .logo {
   height: 10rem;
+  padding-top: 0.8rem;
 }
 
 .main-nav-list {
@@ -165,7 +166,7 @@ body {
 }
 
 .sticky .hero {
-  margin-top: 9.6rem;
+  margin-top: 7rem;
 }
 
 /* ************************/
