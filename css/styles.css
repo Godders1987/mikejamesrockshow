@@ -65,7 +65,7 @@ body {
 .header {
   height: 100vh;
   background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
-    url(../img/vishnu-r-nair-m1WZS5ye404-unsplash.jpg);
+    url(../img/vishnu-r-nair-m1WZS5ye404-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   scroll-snap-align: center;
@@ -275,7 +275,7 @@ body {
 .contact {
   /* height: 100vh; */
   background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
-    url(../img/sam-moghadam-khamseh-0gaYQpOMNpc-unsplash.jpg);
+    url(../img/sam-moghadam-khamseh-0gaYQpOMNpc-unsplash.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
