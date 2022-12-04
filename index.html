@@ -3,281 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The Mike James Rock Show is an Exeter based radio station playing a selection of the best rock/metal and alternative music from some of the worlds biggest bands!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Mike James Rock Show</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
-  <body class="d-flex flex-column">
+  <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-      <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <img id="main_logo" src="img/logo.png" alt="" />
-        </a>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
-                class="nav-link"
-                target="_blank"
-                >MixCloud</a
-              >
+    <header class="header" id="home">
+      <div class="nav">
+        <a href="#home"
+          ><img
+            class="logo"
+            src="img/MJRS_Logo_Long.png"
+            alt="Mike James Rock Show Logo"
+        /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#home" class="main-nav-link">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                href="#stations"
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Radio Stations</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://hardrockhellradio.com/"
-                    target="_blank"
-                    >Hard Rock Hell Radio</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.facebook.com/rockrageradiolive/"
-                    target="_blank"
-                    >Rock Rage Radio</a
-                  >
-                </li>
-              </ul>
+            <li>
+              <a href="#listen_now" class="main-nav-link">Listen Now</a>
             </li>
-            <li class="nav-item">
-              <a
-                href="https://www.youtube.com/c/MikeJamesRockShow"
-                class="nav-link"
-                target="_blank"
-                >YouTube</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+            <li><a href="#contact" class="main-nav-link">Contact</a></li>
+            <li>
+              <a href="#social_media" class="main-nav-link">Social Media</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
-    </nav>
+      <section class="hero">
+        <div class="container cta">
+          <div class="cta-text">
+            <h1>
+              Want to hear backstage interviews with some of your favourite
+              bands?
+            </h1>
+            <a class="btn" href="#listen_now">Listen Now &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </header>
 
-    <!-- Cards -->
-    <section class="bg-light flex-grow-1" id="card_container">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-around py-5"
-      >
-        <section class="p-1">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a
-                    href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/mixcloud.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
+    <!-- LISTEN NOW -->
 
-                  <a
-                    href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
-                    class="btn btn-dark mt-2"
-                    target="_blank"
-                    >Previous Interviews</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a href="https://hardrockhellradio.com/" target="_blank">
-                    <img
-                      src="img/HRHR_logo.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://hardrockhellradio.com/"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >Hard Rock Radio</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white" id="RR_radio">
-                  <a
-                    href="https://www.facebook.com/rockrageradiolive/"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/RR_logo.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://www.facebook.com/rockrageradiolive/"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >Rock Rage Radio</a
-                  >
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div class="card card_radius border-white">
-                  <a
-                    href="https://www.youtube.com/c/MikeJamesRockShow"
-                    target="_blank"
-                  >
-                    <img
-                      src="img/youtube.png"
-                      alt=""
-                      class="card-img-top img_radius"
-                    />
-                  </a>
-
-                  <a
-                    href="https://www.youtube.com/c/MikeJamesRockShow"
-                    target="_blank"
-                    class="btn btn-dark mt-2"
-                    >YouTube Channel</a
-                  >
-                </div>
-              </div>
+    <section class="cards" id="listen_now">
+      <div class="container-listen section-cards-grid">
+        <div class="card">
+          <img src="img/mixcloud.jpeg" alt="" />
+          <div class="card-content">
+            <div class="card-txt">
+              <p>
+                Home of the Mike James Rock Show listen again service. Updated
+                every Monday
+              </p>
+            </div>
+            <div class="card-btn">
+              <a
+                href="https://www.mixcloud.com/MikeJamesRockShow/stream/"
+                class="btn btn-sm"
+                target="_blank"
+                >Listen Now</a
+              >
             </div>
           </div>
-        </section>
+        </div>
+        <div class="card">
+          <img src="img/HRHR_logo.png" alt="" />
+          <div class="card-content">
+            <p>
+              Thursday's 5pm GMT Mike James Rock show take over Hard Rock Hell
+              Radio
+            </p>
+            <a
+              href="https://hardrockhellradio.com/"
+              class="btn btn-sm"
+              target="_blank"
+              >See Schedule</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/RR_logo.png" alt="" />
+          <div class="card-content">
+            <p>
+              Sundays 10pm GMT or 5pm EST Mike James Rock show take over Rock
+              Rage Radio
+            </p>
+            <a
+              href="https://rockrageradio.com/"
+              class="btn btn-sm"
+              target="_blank"
+              >See Schedule</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/youtube.png" alt="" />
+          <div class="card-content">
+            <p>
+              Interviews with some of the biggest stars on the Rock/Metal &
+              Alternative scenes.
+            </p>
+            <a
+              href="https://www.youtube.com/c/MikeJamesRockShow"
+              class="btn btn-sm"
+              target="_blank"
+              >Watch Now</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Form -->
+    <!-- CONTACT FORM -->
 
-    <section id="contact">
-      <div class="container my-3 mb-6">
-        <h3 class="text-center h2">Contact Us!</h3>
-        <form class="row g-3" action="POST" data-netlify="true">
-          <div class="col-md-6">
-            <label for="firstName" class="form-label">First Name</label>
+    <section class="contact" id="contact">
+      <div class="contact-form" id="contact-form">
+        <div class="container-form">
+          <form
+            name="contact"
+            method="POST"
+            netlify
+            data-netlify-recaptcha="true"
+          >
+            <label for="name">Name</label>
             <input
               type="text"
-              name="firstName"
-              id="firstName"
-              class="form-control"
+              name="name"
+              id="name"
               required
+              placeholder="Enter Name"
             />
-          </div>
-          <div class="col-md 6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="col-md-8">
-            <label for="emailInfo" class="form-label">E-Mail</label>
+            <label for="email">Email</label>
             <input
               type="email"
               name="email"
-              id="emailInfo"
-              class="form-control"
+              id="email"
               required
+              placeholder="Enter Email"
             />
-          </div>
-          <div class="col-md-4">
-            <label for="phoneNumber" class="form-label"
-              >Phone Number (optional)</label
-            >
-            <input
-              type="text"
-              name="phoneNumber"
-              id="phoneNumber"
-              class="form-control"
-              placeholder="+44 77 7777 7777"
-            />
-          </div>
-          <div class="col-md-12">
-            <label for="comments" class="form-label"
-              >Comments, questions?</label
-            >
+            <label for="message">Message</label>
             <textarea
               name="message"
-              id="comments"
+              id="message"
               cols="30"
-              rows="3"
-              class="form-control"
-              required
+              rows="10"
+              placeholder="Please type message here..."
             ></textarea>
-          </div>
-          <div data-netlify-recaptcha="true"></div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-dark" value="Send">
-              Submit
-            </button>
-          </div>
-        </form>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="submit btn">Submit</button>
+          </form>
+        </div>
       </div>
+
+      <!-- Footer -->
+
+      <footer class="footer" id="social_media">
+        <div class="footer_icons">
+          <a href="https://www.facebook.com/mikejamesrockshow" target="_blank"
+            ><ion-icon class="social_icon" name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://www.instagram.com/mikejamesrockshow/" target="_blank"
+            ><ion-icon class="social_icon" name="logo-instagram"></ion-icon
+          ></a>
+          <a
+            href="https://twitter.com/tweetMJRS?s=20&t=trAFuwJuffR-4hPzIWWXDw"
+            target="_blank"
+            ><ion-icon class="social_icon" name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+      </footer>
     </section>
-
-    <!-- Footer -->
-
-    <footer class="bg-dark sticky-bottom mt-auto">
-      <div class="container p-5 text-center">
-        <a href="https://www.facebook.com/mikejamesrockshow" target="_blank"
-          ><i class="bi bi-facebook h1 m-4"></i
-        ></a>
-        <a href="https://www.instagram.com/mikejamesrockshow/" target="_blank"
-          ><i class="bi bi-instagram h1 m-4"></i
-        ></a>
-        <a
-          href="https://twitter.com/tweetMJRS?s=20&t=trAFuwJuffR-4hPzIWWXDw"
-          target="_blank"
-          ><i class="bi bi-twitter h1 m-4"></i
-        ></a>
-      </div>
-    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
 </html>
