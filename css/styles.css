@@ -332,6 +332,10 @@ textarea {
   padding: 1rem;
 }
 
+.g-recaptcha div:first-child {
+  padding-bottom: 3.2rem;
+}
+
 input,
 input::placeholder {
   font-size: 1.8rem;
