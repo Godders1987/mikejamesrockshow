@@ -332,8 +332,8 @@ textarea {
   padding: 1rem;
 }
 
-.submit {
-  padding-top: 3.2rem;
+.g-recaptcha {
+  padding-bottom: 3.2rem;
 }
 
 input,
